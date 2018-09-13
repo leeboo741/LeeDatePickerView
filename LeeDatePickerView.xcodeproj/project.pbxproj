@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		044BA965214A323F00740AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA964214A323F00740AFA /* AppDelegate.m */; };
+		044BA968214A323F00740AFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA967214A323F00740AFA /* ViewController.m */; };
+		044BA96B214A323F00740AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BA969214A323F00740AFA /* Main.storyboard */; };
+		044BA96D214A324B00740AFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044BA96C214A324B00740AFA /* Assets.xcassets */; };
+		044BA970214A324B00740AFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BA96E214A324B00740AFA /* LaunchScreen.storyboard */; };
+		044BA973214A324B00740AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA972214A324B00740AFA /* main.m */; };
+		044BA97D214A324C00740AFA /* LeeDatePickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA97C214A324C00740AFA /* LeeDatePickerViewTests.m */; };
+		044BA988214A324C00740AFA /* LeeDatePickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		044BA979214A324C00740AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044BA958214A323E00740AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044BA95F214A323F00740AFA;
+			remoteInfo = LeeDatePickerView;
+		};
+		044BA984214A324C00740AFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 044BA958214A323E00740AFA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 044BA95F214A323F00740AFA;
+			remoteInfo = LeeDatePickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		044BA960214A323F00740AFA /* LeeDatePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeDatePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		044BA963214A323F00740AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		044BA964214A323F00740AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		044BA966214A323F00740AFA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		044BA967214A323F00740AFA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		044BA96A214A323F00740AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		044BA96C214A324B00740AFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		044BA96F214A324B00740AFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		044BA971214A324B00740AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044BA972214A324B00740AFA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		044BA978214A324C00740AFA /* LeeDatePickerViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeDatePickerViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044BA97C214A324C00740AFA /* LeeDatePickerViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerViewTests.m; sourceTree = "<group>"; };
+		044BA97E214A324C00740AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044BA983214A324C00740AFA /* LeeDatePickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeDatePickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerViewUITests.m; sourceTree = "<group>"; };
+		044BA989214A324C00740AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		044BA95D214A323F00740AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA975214A324C00740AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA980214A324C00740AFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		044BA957214A323E00740AFA = {
+			isa = PBXGroup;
+			children = (
+				044BA962214A323F00740AFA /* LeeDatePickerView */,
+				044BA97B214A324C00740AFA /* LeeDatePickerViewTests */,
+				044BA986214A324C00740AFA /* LeeDatePickerViewUITests */,
+				044BA961214A323F00740AFA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		044BA961214A323F00740AFA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				044BA960214A323F00740AFA /* LeeDatePickerView.app */,
+				044BA978214A324C00740AFA /* LeeDatePickerViewTests.xctest */,
+				044BA983214A324C00740AFA /* LeeDatePickerViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		044BA962214A323F00740AFA /* LeeDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				044BA963214A323F00740AFA /* AppDelegate.h */,
+				044BA964214A323F00740AFA /* AppDelegate.m */,
+				044BA966214A323F00740AFA /* ViewController.h */,
+				044BA967214A323F00740AFA /* ViewController.m */,
+				044BA969214A323F00740AFA /* Main.storyboard */,
+				044BA96C214A324B00740AFA /* Assets.xcassets */,
+				044BA96E214A324B00740AFA /* LaunchScreen.storyboard */,
+				044BA971214A324B00740AFA /* Info.plist */,
+				044BA972214A324B00740AFA /* main.m */,
+			);
+			path = LeeDatePickerView;
+			sourceTree = "<group>";
+		};
+		044BA97B214A324C00740AFA /* LeeDatePickerViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				044BA97C214A324C00740AFA /* LeeDatePickerViewTests.m */,
+				044BA97E214A324C00740AFA /* Info.plist */,
+			);
+			path = LeeDatePickerViewTests;
+			sourceTree = "<group>";
+		};
+		044BA986214A324C00740AFA /* LeeDatePickerViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */,
+				044BA989214A324C00740AFA /* Info.plist */,
+			);
+			path = LeeDatePickerViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		044BA95F214A323F00740AFA /* LeeDatePickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044BA98C214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerView" */;
+			buildPhases = (
+				044BA95C214A323F00740AFA /* Sources */,
+				044BA95D214A323F00740AFA /* Frameworks */,
+				044BA95E214A323F00740AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeeDatePickerView;
+			productName = LeeDatePickerView;
+			productReference = 044BA960214A323F00740AFA /* LeeDatePickerView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		044BA977214A324C00740AFA /* LeeDatePickerViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044BA98F214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerViewTests" */;
+			buildPhases = (
+				044BA974214A324C00740AFA /* Sources */,
+				044BA975214A324C00740AFA /* Frameworks */,
+				044BA976214A324C00740AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044BA97A214A324C00740AFA /* PBXTargetDependency */,
+			);
+			name = LeeDatePickerViewTests;
+			productName = LeeDatePickerViewTests;
+			productReference = 044BA978214A324C00740AFA /* LeeDatePickerViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		044BA982214A324C00740AFA /* LeeDatePickerViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 044BA992214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerViewUITests" */;
+			buildPhases = (
+				044BA97F214A324C00740AFA /* Sources */,
+				044BA980214A324C00740AFA /* Frameworks */,
+				044BA981214A324C00740AFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				044BA985214A324C00740AFA /* PBXTargetDependency */,
+			);
+			name = LeeDatePickerViewUITests;
+			productName = LeeDatePickerViewUITests;
+			productReference = 044BA983214A324C00740AFA /* LeeDatePickerViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		044BA958214A323E00740AFA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = mac;
+				TargetAttributes = {
+					044BA95F214A323F00740AFA = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					044BA977214A324C00740AFA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 044BA95F214A323F00740AFA;
+					};
+					044BA982214A324C00740AFA = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 044BA95F214A323F00740AFA;
+					};
+				};
+			};
+			buildConfigurationList = 044BA95B214A323E00740AFA /* Build configuration list for PBXProject "LeeDatePickerView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 044BA957214A323E00740AFA;
+			productRefGroup = 044BA961214A323F00740AFA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				044BA95F214A323F00740AFA /* LeeDatePickerView */,
+				044BA977214A324C00740AFA /* LeeDatePickerViewTests */,
+				044BA982214A324C00740AFA /* LeeDatePickerViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		044BA95E214A323F00740AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044BA970214A324B00740AFA /* LaunchScreen.storyboard in Resources */,
+				044BA96D214A324B00740AFA /* Assets.xcassets in Resources */,
+				044BA96B214A323F00740AFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA976214A324C00740AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA981214A324C00740AFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		044BA95C214A323F00740AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044BA968214A323F00740AFA /* ViewController.m in Sources */,
+				044BA973214A324B00740AFA /* main.m in Sources */,
+				044BA965214A323F00740AFA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA974214A324C00740AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044BA97D214A324C00740AFA /* LeeDatePickerViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		044BA97F214A324C00740AFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				044BA988214A324C00740AFA /* LeeDatePickerViewUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		044BA97A214A324C00740AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044BA95F214A323F00740AFA /* LeeDatePickerView */;
+			targetProxy = 044BA979214A324C00740AFA /* PBXContainerItemProxy */;
+		};
+		044BA985214A324C00740AFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 044BA95F214A323F00740AFA /* LeeDatePickerView */;
+			targetProxy = 044BA984214A324C00740AFA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		044BA969214A323F00740AFA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044BA96A214A323F00740AFA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		044BA96E214A324B00740AFA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				044BA96F214A324B00740AFA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		044BA98A214A324C00740AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		044BA98B214A324C00740AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		044BA98D214A324C00740AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6967F8FN94;
+				INFOPLIST_FILE = LeeDatePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		044BA98E214A324C00740AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6967F8FN94;
+				INFOPLIST_FILE = LeeDatePickerView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		044BA990214A324C00740AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeeDatePickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeeDatePickerView.app/LeeDatePickerView";
+			};
+			name = Debug;
+		};
+		044BA991214A324C00740AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeeDatePickerViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeeDatePickerView.app/LeeDatePickerView";
+			};
+			name = Release;
+		};
+		044BA993214A324C00740AFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeeDatePickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeeDatePickerView;
+			};
+			name = Debug;
+		};
+		044BA994214A324C00740AFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LeeDatePickerViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.Lee.LeeDatePickerViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LeeDatePickerView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		044BA95B214A323E00740AFA /* Build configuration list for PBXProject "LeeDatePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044BA98A214A324C00740AFA /* Debug */,
+				044BA98B214A324C00740AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044BA98C214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044BA98D214A324C00740AFA /* Debug */,
+				044BA98E214A324C00740AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044BA98F214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044BA990214A324C00740AFA /* Debug */,
+				044BA991214A324C00740AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		044BA992214A324C00740AFA /* Build configuration list for PBXNativeTarget "LeeDatePickerViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				044BA993214A324C00740AFA /* Debug */,
+				044BA994214A324C00740AFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 044BA958214A323E00740AFA /* Project object */;
+}
