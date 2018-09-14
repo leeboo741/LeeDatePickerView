@@ -15,6 +15,7 @@
 		044BA973214A324B00740AFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA972214A324B00740AFA /* main.m */; };
 		044BA97D214A324C00740AFA /* LeeDatePickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA97C214A324C00740AFA /* LeeDatePickerViewTests.m */; };
 		044BA988214A324C00740AFA /* LeeDatePickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */; };
+		044BA998214A33E200740AFA /* LeeDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA997214A33E200740AFA /* LeeDatePickerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		044BA983214A324C00740AFA /* LeeDatePickerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeeDatePickerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerViewUITests.m; sourceTree = "<group>"; };
 		044BA989214A324C00740AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044BA996214A33E200740AFA /* LeeDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerView.h; sourceTree = "<group>"; };
+		044BA997214A33E200740AFA /* LeeDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		044BA962214A323F00740AFA /* LeeDatePickerView */ = {
 			isa = PBXGroup;
 			children = (
+				044BA995214A326700740AFA /* LeeDatePickerView */,
 				044BA963214A323F00740AFA /* AppDelegate.h */,
 				044BA964214A323F00740AFA /* AppDelegate.m */,
 				044BA966214A323F00740AFA /* ViewController.h */,
@@ -130,6 +134,23 @@
 				044BA989214A324C00740AFA /* Info.plist */,
 			);
 			path = LeeDatePickerViewUITests;
+			sourceTree = "<group>";
+		};
+		044BA995214A326700740AFA /* LeeDatePickerView */ = {
+			isa = PBXGroup;
+			children = (
+				044BA999214A4F6500740AFA /* View */,
+				044BA996214A33E200740AFA /* LeeDatePickerView.h */,
+				044BA997214A33E200740AFA /* LeeDatePickerView.m */,
+			);
+			path = LeeDatePickerView;
+			sourceTree = "<group>";
+		};
+		044BA999214A4F6500740AFA /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +286,7 @@
 				044BA968214A323F00740AFA /* ViewController.m in Sources */,
 				044BA973214A324B00740AFA /* main.m in Sources */,
 				044BA965214A323F00740AFA /* AppDelegate.m in Sources */,
+				044BA998214A33E200740AFA /* LeeDatePickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
