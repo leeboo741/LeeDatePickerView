@@ -22,13 +22,12 @@
 }
 
 - (IBAction)buttonAction:(id)sender {
-    LeeDatePickerView * date = [[LeeDatePickerView alloc]init];
-    date.selectTimeBlock = ^(NSDate *startDate, NSDate *endDate) {
+    [LeeDatePickerView showLeeDatePickerViewWithBlock:^(NSDate *startDate, NSDate *endDate) {
         NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
         [formatter setDateFormat:@"yyyy.MM.dd"];
         NSLog(@"%@",[formatter stringFromDate:startDate]);
         NSLog(@"%@",[formatter stringFromDate:endDate]);
-    };
+    }];
 }
 
 - (void)didReceiveMemoryWarning {

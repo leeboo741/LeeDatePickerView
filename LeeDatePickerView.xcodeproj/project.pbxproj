@@ -16,6 +16,7 @@
 		044BA97D214A324C00740AFA /* LeeDatePickerViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA97C214A324C00740AFA /* LeeDatePickerViewTests.m */; };
 		044BA988214A324C00740AFA /* LeeDatePickerViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA987214A324C00740AFA /* LeeDatePickerViewUITests.m */; };
 		044BA998214A33E200740AFA /* LeeDatePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA997214A33E200740AFA /* LeeDatePickerView.m */; };
+		0458C11D214B893300D81977 /* LeeDatePickerHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0458C11C214B893300D81977 /* LeeDatePickerHeadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		044BA989214A324C00740AFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		044BA996214A33E200740AFA /* LeeDatePickerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerView.h; sourceTree = "<group>"; };
 		044BA997214A33E200740AFA /* LeeDatePickerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerView.m; sourceTree = "<group>"; };
+		0458C11B214B893300D81977 /* LeeDatePickerHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerHeadView.h; sourceTree = "<group>"; };
+		0458C11C214B893300D81977 /* LeeDatePickerHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerHeadView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +152,8 @@
 		044BA999214A4F6500740AFA /* View */ = {
 			isa = PBXGroup;
 			children = (
+				0458C11B214B893300D81977 /* LeeDatePickerHeadView.h */,
+				0458C11C214B893300D81977 /* LeeDatePickerHeadView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -284,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				044BA968214A323F00740AFA /* ViewController.m in Sources */,
+				0458C11D214B893300D81977 /* LeeDatePickerHeadView.m in Sources */,
 				044BA973214A324B00740AFA /* main.m in Sources */,
 				044BA965214A323F00740AFA /* AppDelegate.m in Sources */,
 				044BA998214A33E200740AFA /* LeeDatePickerView.m in Sources */,
