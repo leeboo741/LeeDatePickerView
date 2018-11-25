@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0435F84B21A7DBD600393660 /* LeeDatePickerSingleHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435F84A21A7DBD600393660 /* LeeDatePickerSingleHeadView.m */; };
 		044BA965214A323F00740AFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA964214A323F00740AFA /* AppDelegate.m */; };
 		044BA968214A323F00740AFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 044BA967214A323F00740AFA /* ViewController.m */; };
 		044BA96B214A323F00740AFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044BA969214A323F00740AFA /* Main.storyboard */; };
@@ -38,10 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0435F84921A7DBD600393660 /* LeeDatePickerSingleHeadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerSingleHeadView.h; sourceTree = "<group>"; };
-		0435F84A21A7DBD600393660 /* LeeDatePickerSingleHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerSingleHeadView.m; sourceTree = "<group>"; };
-		0435F84D21A7E02500393660 /* LeeDatePickerHeadViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerHeadViewProtocol.h; sourceTree = "<group>"; };
-		0435F84E21A7E2A200393660 /* LeeDatePickerHeadViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerHeadViewDelegate.h; sourceTree = "<group>"; };
 		044BA960214A323F00740AFA /* LeeDatePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeDatePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BA963214A323F00740AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044BA964214A323F00740AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -159,10 +154,6 @@
 			children = (
 				0458C11B214B893300D81977 /* LeeDatePickerHeadView.h */,
 				0458C11C214B893300D81977 /* LeeDatePickerHeadView.m */,
-				0435F84921A7DBD600393660 /* LeeDatePickerSingleHeadView.h */,
-				0435F84A21A7DBD600393660 /* LeeDatePickerSingleHeadView.m */,
-				0435F84D21A7E02500393660 /* LeeDatePickerHeadViewProtocol.h */,
-				0435F84E21A7E2A200393660 /* LeeDatePickerHeadViewDelegate.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -302,7 +293,6 @@
 				044BA973214A324B00740AFA /* main.m in Sources */,
 				044BA965214A323F00740AFA /* AppDelegate.m in Sources */,
 				044BA998214A33E200740AFA /* LeeDatePickerView.m in Sources */,
-				0435F84B21A7DBD600393660 /* LeeDatePickerSingleHeadView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
