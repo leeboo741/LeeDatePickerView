@@ -246,7 +246,7 @@
 				};
 			};
 			buildConfigurationList = 044BA95B214A323E00740AFA /* Build configuration list for PBXProject "LeeDatePickerView" */;
-			compatibilityVersion = "Xcode 9.3”;
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
