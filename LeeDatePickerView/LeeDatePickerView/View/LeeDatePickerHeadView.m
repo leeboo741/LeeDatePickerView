@@ -21,6 +21,11 @@
 @end
 
 @implementation LeeDatePickerHeadView
+
+@synthesize startTimeStr = _startTimeStr;
+@synthesize endTimeStr = _endTimeStr;
+@synthesize delegate = _delegate;
+
 -(void)setFrame:(CGRect)frame{
     [super setFrame:frame];
     [self.startTimeView setFrame:CGRectMake(0, 5, self.bounds.size.width / 2, self.bounds.size.height)];
@@ -98,26 +103,25 @@
     [UIView animateWithDuration:0.3 animations:^{
         self.LineView.frame=CGRectMake(self.bounds.size.width/4-self.bounds.size.width/8, 40, self.bounds.size.width/4, 5);
     }];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(leeDatePickerHeadViewSelectedStartTimeView:)]) {
-        [self.delegate leeDatePickerHeadViewSelectedStartTimeView:self];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(leeDatePickerHeadView:select:)]) {
+        [self.delegate leeDatePickerHeadView:self select:LeeDatePickerHeadViewSelectIndex_Start];
     }
 }
 -(void)endTimeTapAction{
     [UIView animateWithDuration:0.3 animations:^{
         self.LineView.frame=CGRectMake(self.bounds.size.width/2+self.bounds.size.width/8, 40, self.bounds.size.width/4, 5);
     }];
-    if (self.delegate && [self.delegate respondsToSelector:@selector(leeDatePickerHeadViewSelectedEndTimeView:)]) {
-        [self.delegate leeDatePickerHeadViewSelectedEndTimeView:self];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(leeDatePickerHeadView:select:)]) {
+        [self.delegate leeDatePickerHeadView:self select:LeeDatePickerHeadViewSelectIndex_End];
     }
 }
--(void)setStartDateStr:(NSString *)startDateStr{
-    _startDateStr = startDateStr;
-    self.startTimeLabel.text = startDateStr;
+-(void)setStartTimeStr:(NSString *)startTimeStr{
+    _startTimeStr = startTimeStr;
+    self.startTimeLabel.text = startTimeStr;
 }
--(void)setEndDateStr:(NSString *)endDateStr{
-    _endDateStr = endDateStr;
-    self.endTimeLabel.text = endDateStr;
-    
+-(void)setEndTimeStr:(NSString *)endTimeStr{
+    _endTimeStr = endTimeStr;
+    self.endTimeLabel.text = endTimeStr;
 }
 
 

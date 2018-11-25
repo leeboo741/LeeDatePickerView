@@ -7,18 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeeDatePickerHeadViewProtocol.h"
+#import "LeeDatePickerHeadViewDelegate.h"
 
-@class LeeDatePickerHeadView;
-@protocol LeeDatePickerHeadViewDelegate<NSObject>
--(void)leeDatePickerHeadViewSelectedStartTimeView:(LeeDatePickerHeadView *)headView;
--(void)leeDatePickerHeadViewSelectedEndTimeView:(LeeDatePickerHeadView *)headView;
-@end
 
-@interface LeeDatePickerHeadView : UIView
-
-@property (nonatomic, copy) NSString * startDateStr;
-@property (nonatomic, copy) NSString * endDateStr;
-
-@property (nonatomic, weak) id<LeeDatePickerHeadViewDelegate>delegate;
+@interface LeeDatePickerHeadView : UIView <LeeDatePickerHeadViewProtocol>
 
 @end

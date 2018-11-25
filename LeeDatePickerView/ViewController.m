@@ -10,6 +10,9 @@
 #import "LeeDatePickerView.h"
 
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *startTimelabel;
+@property (weak, nonatomic) IBOutlet UILabel *endTimelabel;
+@property (weak, nonatomic) IBOutlet UILabel *singleTimelabel;
 
 @end
 
@@ -22,12 +25,60 @@
 }
 
 - (IBAction)buttonAction:(id)sender {
-    [LeeDatePickerView showLeeDatePickerViewWithBlock:^(NSDate *startDate, NSDate *endDate) {
-        NSDateFormatter * formatter = [[NSDateFormatter alloc]init];
-        [formatter setDateFormat:@"yyyy.MM.dd"];
-        NSLog(@"%@",[formatter stringFromDate:startDate]);
-        NSLog(@"%@",[formatter stringFromDate:endDate]);
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_StartAndEnd
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMd
+                                                block:^(NSArray<NSDate *> *dateArray) {
+        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+        self.startTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Start]];
+        self.endTimelabel.text =[dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_End]];
     }];
+}
+- (IBAction)ymdhmZoneAction:(id)sender {
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_StartAndEnd
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMdHm
+                                                block:^(NSArray<NSDate *> *dateArray) {
+                                                    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+                                                    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+                                                    self.startTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Start]];
+                                                    self.endTimelabel.text =[dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_End]];
+                                                }];
+}
+- (IBAction)ymdhmsZoneAction:(id)sender {
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_StartAndEnd
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMdHms
+                                                block:^(NSArray<NSDate *> *dateArray) {
+                                                    NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+                                                    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                                                    self.startTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Start]];
+                                                    self.endTimelabel.text =[dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_End]];
+                                                }];
+}
+- (IBAction)singleSelectAction:(id)sender {
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_Single
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMd block:^(NSArray<NSDate *> *dateArray) {
+                                           NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+                                           [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+                                           self.singleTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Single]];
+                                       }];
+}
+- (IBAction)ymdhmSingleAction:(id)sender {
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_Single
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMdHm
+                                                block:^(NSArray<NSDate *> *dateArray) {
+                                           NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+                                                    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm"];
+                                           self.singleTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Single]];
+                                       }];
+}
+- (IBAction)ymdhmsSingleAction:(id)sender {
+    [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_Single
+                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMdHms
+                                                block:^(NSArray<NSDate *> *dateArray) {
+                                           NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+                                                    [dateFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+                                           self.singleTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Single]];
+                                       }];
 }
 
 - (void)didReceiveMemoryWarning {
