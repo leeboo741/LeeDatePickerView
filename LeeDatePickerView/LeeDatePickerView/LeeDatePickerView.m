@@ -617,6 +617,16 @@ static CGFloat selectPickerTimerInterval = 0.1; // pickerview 滚动 timer 时�
 -(CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component{
     return 40.0f;
 }
+-(UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view{
+    UILabel * label = (UILabel *)view;
+    if (!label) {
+        label = [[UILabel alloc]init];
+        label.textAlignment = NSTextAlignmentCenter;
+        [label setBackgroundColor:[UIColor clearColor]];
+    }
+    label.attributedText = [self pickerView:pickerView attributedTitleForRow:row forComponent:component];
+    return label;
+}
 -(NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component{
     NSString * string;
     BOOL isSelected;
@@ -651,18 +661,21 @@ static CGFloat selectPickerTimerInterval = 0.1; // pickerview 滚动 timer 时�
     UIColor * color;
     switch (self.formatterStyle) {
         case LeeDatePickerViewDateFormatterStyle_yMd:
-            selectFontSize = 11.0f;
-            unSelectFontSize = 11.0f;
+            selectFontSize = 21.0f;
+            unSelectFontSize = 21.0f;
             break;
         case LeeDatePickerViewDateFormatterStyle_yMdHm:
+            selectFontSize = 19.0f;
+            unSelectFontSize = 19.0f;
+            break;
         case LeeDatePickerViewDateFormatterStyle_yMdHms:
-            selectFontSize = 9.0f;
-            unSelectFontSize = 9.0f;
+            selectFontSize = 17.0f;
+            unSelectFontSize = 17.0f;
             break;
             
         default:
-            selectFontSize = 10.0f;
-            unSelectFontSize = 10.0f;
+            selectFontSize = 19.0f;
+            unSelectFontSize = 19.0f;
             break;
     }
     if (isSelected) {
