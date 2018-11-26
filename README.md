@@ -2,24 +2,41 @@
 一行代码集成时间选择器
 
 ### 例图
-![例图1](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/1.png)
-![例图2](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/2.png)
-![例图3](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/3.png)
-![使用方法](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/4.png)
-![打印结果](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/5.png)
+![例图1](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymd_single.png)
+![例图2](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymd_zone.png)
+![例图3](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymdhm_single.png)
+![例图4](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymdhm_zone.png)
+![例图5](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymdhms_single.png)
+![例图6](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/ymdhms_zone.png)
+![使用方法](https://github.com/leeboo741/ImageRepository/blob/master/DatePickerImage/leeDatePicker_usingCode.png)
 
-### 很简单
+### 使用简单
 
 > 很简单，代码简单，使用更简单，一句话集成
 >
-> [LeeDatePickerView showLeeDatePickerViewWithBlock:^(NSDate *startDate, NSDate *endDate) {}];
+> [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_StartAndEnd
+>                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMd
+>                                                block:^(NSArray<NSDate *> *dateArray) {
+>        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+>        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+>        self.startTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Start]];
+>        self.endTimelabel.text =[dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_End]];
+>    }];
 >
 > 就可以使用时间选择器，并且在block中返回选中的时间。
 
-### 不足
+### 更新
 
- * 在给点时间，多面对一些使用场景，目前只能是选择开始日期和结束日期，后期会做成可以选择单个日期，可以选择日期和时间等等。
- * 时间比对错误状态之类的没太想明白，目前只有当结束时间超过开始时间才会提醒，可以自己添加。
+ * 添加了单选时间的样式
+ * 添加了显示的时间格式
+ * 取消了开始时间和结束时间的校验
+
+### 接下来
+
+ * 可以自主选择传入 MinDate 和 MaxDate。
+ * 可以自主选择传入 初始 Date。
+ * 拆分 HeadView、ContentView、FootView。
+ * 拆分View、Protocol、Delegate，使其可以继承Protocol来自定义HeadView、ContentView、FootView。
  * 代码还是很堆积，会在后面把代码拆分开来。
 
 ### Orz 依旧跪求星星
