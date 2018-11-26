@@ -42,6 +42,7 @@
 		0435F84A21A7DBD600393660 /* LeeDatePickerSingleHeadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeeDatePickerSingleHeadView.m; sourceTree = "<group>"; };
 		0435F84D21A7E02500393660 /* LeeDatePickerHeadViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerHeadViewProtocol.h; sourceTree = "<group>"; };
 		0435F84E21A7E2A200393660 /* LeeDatePickerHeadViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeeDatePickerHeadViewDelegate.h; sourceTree = "<group>"; };
+		0435F84F21AB7A9700393660 /* Task.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Task.md; sourceTree = "<group>"; };
 		044BA960214A323F00740AFA /* LeeDatePickerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeeDatePickerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044BA963214A323F00740AFA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		044BA964214A323F00740AFA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 				044BA995214A326700740AFA /* LeeDatePickerView */,
 				044BA963214A323F00740AFA /* AppDelegate.h */,
 				044BA964214A323F00740AFA /* AppDelegate.m */,
+				0435F84F21AB7A9700393660 /* Task.md */,
 				044BA966214A323F00740AFA /* ViewController.h */,
 				044BA967214A323F00740AFA /* ViewController.m */,
 				044BA969214A323F00740AFA /* Main.storyboard */,

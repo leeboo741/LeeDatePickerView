@@ -64,6 +64,8 @@ LeeDatePickerHeadViewDelegate
 @property (nonatomic, copy) LeeDatePickerViewSelectTimeBlock lDatePickerSelectTimeBlock;
 // Formatter Style
 @property (nonatomic, assign) LeeDatePickerViewDateFormatterStyle formatterStyle; // 时间格式样式
+// Style
+@property (nonatomic, assign) LeeDatePickerViewStyle style;
 
 @end
 
