@@ -15,12 +15,19 @@
 > 很简单，代码简单，使用更简单，一句话集成
 >
 > [LeeDatePickerView showLeeDatePickerViewWithStyle:LeeDatePickerViewStyle_StartAndEnd
+>
 >                                       formatterStyle:LeeDatePickerViewDateFormatterStyle_yMd
+>
 >                                                block:^(NSArray<NSDate *> *dateArray) {
+>
 >        NSDateFormatter * dateFormatter = [[NSDateFormatter alloc]init];
+>
 >        [dateFormatter setDateFormat:@"yyyy-MM-dd"];
+>
 >        self.startTimelabel.text = [dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_Start]];
+>
 >        self.endTimelabel.text =[dateFormatter stringFromDate:dateArray[LeeDatePickerViewSelectTimeArrayIndex_End]];
+>
 >    }];
 >
 > 就可以使用时间选择器，并且在block中返回选中的时间。
