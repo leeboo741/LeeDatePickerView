@@ -311,9 +311,18 @@ static CGFloat selectPickerTimerInterval = 0.1; // pickerview 滚动 timer 时�
     }
     return _secArray;
 }
+-(void)setMinIndex:(NSInteger)minIndex{
+    if (minIndex >= 59) {
+        minIndex = 58;
+    }
+    if (minIndex < 0) {
+        minIndex = 0;
+    }
+    _minIndex = minIndex;
+}
 -(void)setSecIndex:(NSInteger)secIndex{
-    if (secIndex >= 60) {
-        secIndex = 59;
+    if (secIndex >= 59) {
+        secIndex = 58;
     }
     if (secIndex < 0) {
         secIndex = 0;
