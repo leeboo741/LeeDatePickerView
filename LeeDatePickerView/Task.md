@@ -8,6 +8,7 @@
 5. 拆分View、Protocol、Delegate，使其可以继承Protocol来自定义HeadView、ContentView、FootView。
 6. 解决DatePickerView滚动时的数组越界问题。
 7. 解决校验开始时间和结束时间时Index超大的问题。
+8. 添加NSDateFormatter的缓存，提升性能
 
 
 ### 已完成
